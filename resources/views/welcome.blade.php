@@ -77,10 +77,10 @@
                             <td class="text-center">
                                 @if ($receptor->message_id)
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#show">
+                                        data-bs-target="#show{{$receptor->id}}">
                                         مشاهده
                                     </button>
-                                    <div class="modal fade" id="show">
+                                    <div class="modal fade" id="show{{$receptor->id}}">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
 
