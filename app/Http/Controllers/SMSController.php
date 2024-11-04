@@ -54,9 +54,9 @@ class SMSController extends Controller
                         $flag = false;
                     }
                     $counter++;
-                    sleep(3);
+                    sleep(1);
                 }
-                sleep(3);
+                sleep(1);
             }
         }
         return redirect(route('index'));
