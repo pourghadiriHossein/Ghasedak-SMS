@@ -21,7 +21,7 @@ class Excel
 
                 $data[] = (object)[
                     'row' => $row,
-                    'phone' => $cellValue
+                    'phone' => "0".intval($cellValue)
                 ];
             }
             return $data;
