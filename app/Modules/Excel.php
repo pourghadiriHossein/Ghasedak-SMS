@@ -19,10 +19,7 @@ class Excel
             for ($row = 1; $row <= $highestRow; $row++) {
                 $cellValue = $sheet->getCell('A' . $row)->getValue();
 
-                $data[] = (object)[
-                    'row' => $row,
-                    'phone' => "0".intval($cellValue)
-                ];
+                $data[] = "0".intval($cellValue);
             }
             return $data;
         } catch (Exception $e) {
