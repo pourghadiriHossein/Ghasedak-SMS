@@ -65,7 +65,11 @@ class BulkSMS extends Command
                 $counter++;
                 sleep(1);
             }
-            echo "Done \n";
+            if ($flag) {
+                echo "Not Done \n";
+            } else {
+                echo "Done \n";
+            }
             sleep(1);
         }
     }
